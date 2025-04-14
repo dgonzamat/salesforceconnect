@@ -1,0 +1,16 @@
+<template>
+    <div class="userprofile-container">
+        <div class="userprofile-avatar">
+            <lightning-avatar 
+                src={suraLogoUrl}
+                fallback-icon-name="standard:user" 
+                alternative-text="User avatar"
+                class="userprofile-lightning-avatar">
+            </lightning-avatar>
+        </div>
+        <div class="userprofile-info">
+            <div class="userprofile-name">{userName}</div>
+            <div class="userprofile-role">{userRole}</div>
+        </div>
+    </div>
+</template>

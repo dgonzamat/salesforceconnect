@@ -1,0 +1,110 @@
+.sidebar-menu {
+    position: fixed;
+    width: 250px;
+    height: calc(100vh - 140px);
+    top: 140px;
+    left: 0;
+    border-right: 1px solid #e0e0e0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    overflow-y: auto;
+}
+
+/* Estilos para los elementos del menú */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    flex-grow: 1;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    cursor: pointer;
+    color: #0033A0;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+    background-color: rgba(0, 51, 160, 0.05);
+}
+
+.menu-item span {
+    margin-left: 12px;
+    flex-grow: 1;
+    color: #0033A0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.expand-icon {
+    color: #0033A0;
+}
+
+.menu-item lightning-icon {
+    --sds-c-icon-color-foreground-default: #0033A0;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+/* Add specific styling for the main menu items */
+.menu-item > lightning-icon,
+.menu-item > .menu-icon {
+    min-width: 24px;
+    min-height: 24px;
+    margin-right: 12px;
+}
+
+/* Style for submenu icons */
+.submenu-item lightning-icon,
+.submenu-item .menu-icon {
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 8px;
+}
+
+/* Estilos para los enlaces externos */
+.external-links {
+    padding: 8px 16px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.external-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    color: #0033A0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.external-link span {
+    flex-grow: 1;
+}
+
+.external-link lightning-icon {
+    --sds-c-icon-color-foreground-default: #0033A0;
+}
+
+/* Estilos para el elemento activo del menú */
+.menu-item.active {
+    font-weight: 600;
+}
+
+.menu-icon {
+    margin-right: 8px;
+    /* Add these properties to ensure visibility */
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+}

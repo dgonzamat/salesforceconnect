@@ -1,0 +1,36 @@
+<template>
+    <div class="accesos-container">
+        <h2 class="accesos-titulo">Accesos directos</h2>
+        <div class="accesos-grid">
+            <div class="acceso-item" onclick={handleAccesoClick}>
+                <lightning-icon icon-name="utility:file" size="small" class="acceso-icon" variant="brand"></lightning-icon>
+                <span class="acceso-texto">Búsqueda de Pólizas</span>
+            </div>
+            
+            <div class="acceso-item" onclick={handleAccesoClick}>
+                <lightning-icon icon-name="utility:money" size="small" class="acceso-icon" variant="brand"></lightning-icon>
+                <span class="acceso-texto">Estado de reembolso</span>
+            </div>
+            
+            <div class="acceso-item" onclick={handleAccesoClick}>
+                <lightning-icon icon-name="utility:file" size="small" class="acceso-icon" variant="brand"></lightning-icon>
+                <span class="acceso-texto">Consulta de facturas</span>
+            </div>
+            
+            <div class="acceso-item" onclick={handleAccesoClick}>
+                <lightning-icon icon-name="utility:warning" size="small" class="acceso-icon" variant="brand"></lightning-icon>
+                <span class="acceso-texto">Denuncio de siniestro</span>
+            </div>
+            
+            <div class="acceso-item" onclick={handleAccesoClick}>
+                <lightning-icon icon-name="utility:people" size="small" class="acceso-icon" variant="brand"></lightning-icon>
+                <span class="acceso-texto">Consulta de Beneficiarios</span>
+            </div>
+            
+            <div class="acceso-item" onclick={handleAccesoClick}>
+                <lightning-icon icon-name="utility:guide_card" size="small" class="acceso-icon" variant="brand"></lightning-icon>
+                <span class="acceso-texto">Guía del Corredor</span>
+            </div>
+        </div>
+    </div>
+</template>

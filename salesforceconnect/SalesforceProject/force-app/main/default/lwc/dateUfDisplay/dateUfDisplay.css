@@ -1,0 +1,29 @@
+.date-uf-container {
+    width: 247px;
+    height: 88px;
+    border-radius: 12px;
+    padding: 16px;
+    gap: 15px;
+    background: #F9FAE1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px; /* Añadir espacio superior */
+}
+
+.date-display {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2D6DF6;
+}
+
+.uf-display {
+    font-size: 14px;
+    color: #3F3F41;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .date-uf-container {
+        width: 100%;
+    }
+}

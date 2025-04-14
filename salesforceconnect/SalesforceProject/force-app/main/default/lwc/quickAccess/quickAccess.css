@@ -1,0 +1,108 @@
+.accesos-container {
+    width: 100%;
+    max-width: 720px;
+    background-color: #DFEAFF;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+}
+
+.accesos-header {
+    margin-bottom: 16px;
+}
+
+/* Add the class that matches the HTML */
+.accesos-titulo,
+.accesos-title {
+    font-family: 'Sura Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #0033A0;
+    margin-bottom: 16px;
+}
+
+.accesos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambiado a 3 columnas */
+    gap: 16px;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+}
+
+.acceso-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #e0e0e0;
+    height: 56px;
+}
+
+.acceso-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Asegurar que los iconos sean azules */
+.acceso-icon {
+    margin-right: 12px;
+    --sds-c-icon-color-foreground: #0033A0 !important;
+    --sds-c-icon-color-foreground-default: #0033A0 !important;
+}
+
+/* Enfoque más agresivo para los iconos */
+.acceso-icon lightning-icon {
+    --sds-c-icon-color-foreground-default: #0033A0 !important;
+    --sds-c-icon-color-foreground: #0033A0 !important;
+    --lwc-colorTextIconDefault: #0033A0 !important;
+    --lwc-colorTextDefault: #0033A0 !important;
+    --lwc-colorTextIconInverse: #0033A0 !important;
+    --lwc-colorTextIconInverseHover: #0033A0 !important;
+}
+
+/* Usar :host para penetrar el shadow DOM */
+:host .acceso-icon svg,
+:host .acceso-icon lightning-icon svg,
+.acceso-icon svg,
+.acceso-icon lightning-icon svg {
+    fill: #0033A0 !important;
+    color: #0033A0 !important;
+    stroke: #0033A0 !important;
+}
+
+/* Apuntar a todas las posibles clases de iconos */
+:host .slds-icon,
+:host .slds-icon-text-default,
+.acceso-icon .slds-icon,
+.acceso-icon .slds-icon-text-default,
+.acceso-icon .slds-icon-utility-file,
+.acceso-icon .slds-icon-utility-money,
+.acceso-icon .slds-icon-utility-warning,
+.acceso-icon .slds-icon-utility-people,
+.acceso-icon .slds-icon-utility-guide_card {
+    fill: #0033A0 !important;
+    color: #0033A0 !important;
+    stroke: #0033A0 !important;
+}
+
+.acceso-texto {
+    font-size: 13px;
+    font-weight: 700; /* Cambiado a negrita */
+    color: #0033A0;
+}
+
+/* Add this new selector */
+.acceso-icon-wrapper {
+    display: inline-flex;
+    margin-right: 12px;
+}
+
+.acceso-icon-wrapper lightning-icon {
+    --sds-c-icon-color-foreground-default: #0033A0;
+    --sds-c-icon-color-background: transparent;
+}

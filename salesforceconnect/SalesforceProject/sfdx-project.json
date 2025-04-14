@@ -1,0 +1,14 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true,
+      "package": "SalesforceProject",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT"
+    }
+  ],
+  "sourceApiVersion": "56.0",
+  "defaultusername": "my-devhub",
+  "sfdcLoginUrl": "https://test.salesforce.com"
+}

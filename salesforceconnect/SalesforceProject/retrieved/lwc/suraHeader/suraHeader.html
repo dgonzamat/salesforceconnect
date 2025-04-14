@@ -1,0 +1,31 @@
+<template>
+    <div class="sura-header">
+        <div class="logo-section">
+            <img src="/resource/SuraLogo" alt="SURA" class="sura-logo" />
+            <span class="site-title">Sitio Privado Corredores</span>
+        </div>
+        
+        <div class="nav-icons">
+            <span class="nav-icon home-icon">
+                <lightning-icon icon-name="utility:home" size="small" alternative-text="Home"></lightning-icon>
+            </span>
+            <span class="nav-icon profile-icon">
+                <lightning-icon icon-name="utility:user" size="small" alternative-text="Profile"></lightning-icon>
+            </span>
+            <span class="nav-icon notification-icon">
+                <lightning-icon icon-name="utility:notification" size="small" alternative-text="Notifications"></lightning-icon>
+            </span>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Buscador de cartera" onkeyup={handleSearch} />
+            <button class="search-button">
+                <lightning-icon icon-name="utility:search" size="x-small" alternative-text="Search"></lightning-icon>
+            </button>
+        </div>
+        
+        <div class="logout-button">
+            <lightning-icon icon-name="utility:logout" size="small" alternative-text="Logout"></lightning-icon>
+        </div>
+    </div>
+</template>

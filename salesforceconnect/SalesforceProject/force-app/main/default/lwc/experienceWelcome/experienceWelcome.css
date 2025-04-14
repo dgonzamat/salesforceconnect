@@ -1,0 +1,21 @@
+.welcome-container {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-title {
+    font-size: 1.5rem;
+    color: #032d60;
+    margin-bottom: 1rem;
+}
+
+.welcome-content {
+    padding: 0.5rem 0;
+}
+
+.welcome-message {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,54 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+}
+
+.yapp-logo-img {
+    width: auto;
+    max-width: 300px;  /* Increased from 250px (250 * 1.2 = 300) */
+    height: auto;
+    min-height: 96px;  /* Increased from 80px (80 * 1.2 = 96) */
+    object-fit: contain;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #0033A0;
+}
+
+@media (max-width: 768px) {
+    .yapp-logo-img {
+        max-width: 216px;  /* Increased from 180px (180 * 1.2 = 216) */
+        min-height: 72px;  /* Increased from 60px (60 * 1.2 = 72) */
+    }
+}

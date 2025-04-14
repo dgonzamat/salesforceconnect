@@ -1,0 +1,17 @@
+{
+  "orgName": "Test Company",
+  "edition": "Developer",
+  "hasSampleData": true,
+  "features": ["SetPasswordInApi"],
+  "adminEmail": "jsalazva@nttdata.sdo.demo",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    // Add password policy configuration
+    "passwordPolicies": {
+      "enableSetPasswordInApi": true,
+      "password": "Nttdata2025"
+    }
+  }
+}

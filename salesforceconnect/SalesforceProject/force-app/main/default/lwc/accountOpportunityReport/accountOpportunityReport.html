@@ -1,0 +1,84 @@
+<template>
+    <div class="sura-container sura-global-styles">
+        <div class="search-section">
+            <h2 class="sura-heading sura-heading-h5">Consulta rápida de asegurados</h2>
+            
+            <div class="search-options">
+                <label>Buscar por</label>
+                <div class="combobox-container">
+                    <lightning-combobox
+                        name="searchType"
+                        value={searchType}
+                        options={searchTypeOptions}
+                        onchange={handleSearchTypeChange}>
+                    </lightning-combobox>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label>{searchLabel}</label>
+                <div class="input-with-button">
+                    <lightning-input 
+                        type="text" 
+                        value={searchValue}
+                        onchange={handleSearchValueChange}
+                        placeholder={searchPlaceholder}>
+                    </lightning-input>
+                    <div class="separator">-</div>
+                    <lightning-button-icon 
+                        icon-name="utility:search"
+                        variant="bare"
+                        onclick={handleSearch}
+                        class="search-button">
+                    </lightning-button-icon>
+                </div>
+            </div>
+            
+            <div class="tab-container">
+                <div class={titularClass} onclick={selectTitular}>Titular</div>
+                <div class={beneficiarioClass} onclick={selectBeneficiario}>Beneficiario</div>
+            </div>
+            
+            <div class="action-button-container">
+                <lightning-button 
+                    label="Consultar información"
+                    variant="brand"
+                    onclick={handleConsult}>
+                </lightning-button>
+            </div>
+        </div>
+        
+        <div class="report-section">
+            <h2>Ventas últimos 3 meses</h2>
+            
+            <template if:true={isLoading}>
+                <div class="spinner-container">
+                    <lightning-spinner alternative-text="Cargando" size="medium"></lightning-spinner>
+                </div>
+            </template>
+            
+            <div class="chart-container">
+                <canvas class="chart-canvas"></canvas>
+            </div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <span class="legend-dot meta"></span>
+                    <span>Meta mensual</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-dot actual"></span>
+                    <span>Venta actual</span>
+                </div>
+            </div>
+            
+            <div class="action-button-container">
+                <lightning-button 
+                    label="Ver reporte completo"
+                    variant="brand"
+                    onclick={handleViewFullReport}>
+                </lightning-button>
+            </div>
+        </div>
+    </div>
+</template>

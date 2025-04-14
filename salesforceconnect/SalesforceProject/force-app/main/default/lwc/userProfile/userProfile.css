@@ -1,0 +1,48 @@
+:host {
+    display: block !important;
+    width: 250px;
+    position: fixed;
+    top: 74px;
+    left: 0;
+    z-index: 6;
+    background-color: white;
+    visibility: visible !important;
+}
+
+.userprofile-container {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.userprofile-avatar {
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.userprofile-lightning-avatar {
+    --sds-c-avatar-color-background: #2D6DF6;
+}
+
+.userprofile-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 4px;
+}
+
+.userprofile-name {
+    font-weight: 500;
+    font-size: 14px;
+    color: #2D6DF6;
+    margin-bottom: 2px;
+}
+
+.userprofile-role {
+    font-size: 12px;
+    color: #666;
+}

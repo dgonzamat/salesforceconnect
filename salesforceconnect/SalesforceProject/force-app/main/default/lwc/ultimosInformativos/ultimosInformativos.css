@@ -1,0 +1,83 @@
+.informativos-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+}
+
+.informativos-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.info-icon {
+    --sds-c-icon-color-foreground-default: #0033A0;
+    margin-right: 8px;
+}
+
+.informativos-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0033A0;
+    margin: 0;
+}
+
+.informativos-content {
+    margin-bottom: 20px;
+}
+
+.informativo-item {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.informativo-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.informativo-item p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    margin: 0 0 8px 0;
+}
+
+.informativo-date {
+    font-size: 12px !important;
+    color: #666 !important;
+}
+
+.informativos-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.revisar-button {
+    background-color: #0033A0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 180px;
+    text-align: center;
+}
+
+.revisar-button:hover {
+    background-color: #002680;
+}
+
+@media (max-width: 768px) {
+    .informativos-container {
+        padding: 16px;
+    }
+}

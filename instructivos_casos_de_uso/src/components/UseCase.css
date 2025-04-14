@@ -1,0 +1,51 @@
+.use-case-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content-section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.instruction-step {
+  margin-bottom: 25px;
+  border-left: 4px solid #0056b3;
+  padding-left: 15px;
+}
+
+.instruction-step h4 {
+  color: #0056b3;
+  margin-top: 0;
+}
+
+.instruction-step ul {
+  padding-left: 20px;
+}
+
+.instruction-step li {
+  margin-bottom: 8px;
+}
+
+.navigation-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #003d82;
+}

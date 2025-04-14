@@ -1,0 +1,21 @@
+:host {
+    --sura-font-family: 'Sura Sans', sans-serif;
+}
+
+/* Estilos globales que se aplicarán a todos los componentes */
+.sura-global-styles {
+    font-family: var(--sura-font-family);
+}
+
+/* Tipografía para encabezados */
+.sura-heading {
+    font-family: var(--sura-font-family);
+    font-weight: 600;
+    color: #0033A0;
+}
+
+.sura-heading-h5 {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}

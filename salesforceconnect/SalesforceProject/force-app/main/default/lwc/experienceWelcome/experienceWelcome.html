@@ -1,0 +1,20 @@
+<template>
+    <div class="welcome-container">
+        <h1 class="welcome-title">{title}</h1>
+        
+        <div class="welcome-content">
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Cargando" size="small"></lightning-spinner>
+            </template>
+            
+            <template if:false={isLoading}>
+                <p class="welcome-message">{welcomeMessage}</p>
+                <lightning-button 
+                    label="Actualizar mensaje" 
+                    variant="brand" 
+                    onclick={loadWelcomeMessage}>
+                </lightning-button>
+            </template>
+        </div>
+    </div>
+</template>
